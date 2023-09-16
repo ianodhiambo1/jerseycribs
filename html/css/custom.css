@@ -1,1 +1,34 @@
-body
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 200px) {
+    
+    .wrap{
+            margin-inline: 16px ;
+            border: 1px solid black;
+    
+        }
+    .title{
+        text-transform: uppercase;
+    }
+    .divbtn{
+        width: 100%;
+    }
+    .div_BTN{
+        display: flex;
+        border: 1px solid black;
+        width: auto;
+    }
+}
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768) {
+
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024) {
+
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 80em) {
+
+}

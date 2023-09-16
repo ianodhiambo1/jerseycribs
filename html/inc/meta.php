@@ -10,12 +10,12 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
     <!-- bootstrap css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!-- style css -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- custom css -->
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
     <!-- Responsive-->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- fevicon -->
