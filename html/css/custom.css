@@ -3,19 +3,20 @@
     
     .wrap{
             margin-inline: 16px ;
-            border: 1px solid black;
+            
     
         }
     .title{
         text-transform: uppercase;
+        font-size: 20;
+        font-weight:600 ;
     }
     
     .divbtn{
 
         width:  80%;
         display: flex;
-        justify-content: space-between ;
-        border: 1px solid black;        
+        justify-content: space-between ;      
     }
     #adjdiv2{
         display:none;
@@ -23,27 +24,7 @@
     #adjdiv3{
         display:none;
     }
-    .orderBtn{
-        border: 1px solid black;
-        display: inline-flex;
-        padding: 7px 94px 6px 67px;
-        align-items: flex-end;
-        gap: 10px;
-        height: fit-content;
-        
-    }
 
-    .orderText{
-        border: 1px solid black;
-        padding-block-start: 10px;
-        color: #000000;
-        text-align: center;
-        font-family: Poppins;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
 }
 /* Medium devices such as tablets (768px and up) */
 @media only screen and (min-width: 768) {

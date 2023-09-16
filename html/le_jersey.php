@@ -31,13 +31,13 @@ while ($row = $result->fetch_assoc()) {
             <div class="title">Name</div>
             <div class="tshirt_img"><img src="images/psg-player.png" alt="Image"></div>
 
-            
-                <ul class="divBTN">
-                    <li><button onclick="desc()">Description</button></li>
-                    <li><button onclick="delivery()">Delivery Info</button></li>
-                    <li><button onclick="review()">Reviews</button></li>
-                </ul>
-            
+
+            <ul class="divBTN">
+                <li><button onclick="desc()">Description</button></li>
+                <li><button onclick="delivery()">Delivery Info</button></li>
+                <li><button onclick="review()">Reviews</button></li>
+            </ul>
+
             <div class="adjdiv" id="adjdiv">
                 <p>Description</p>
             </div>
@@ -47,36 +47,37 @@ while ($row = $result->fetch_assoc()) {
             <div class="adjdiv" id="adjdiv3">
                 <p>Review</p>
             </div>
-            <div class="orderBtn" >
-                <img src="images/wa.svg" alt="WA" style="border: 1px solid black;" >
-                <h4 class="orderText">ORDER NOW</h4>
-            </div>
+            <button class="btn mr-2 mb-2 btn-icon btn-primary" type="button" 
+            style=" width:100%;" >
+                <span class="btn-inner-icon"><i class="fa fa-whatsapp"></i></span>
+                <span class="btn-inner-text">ORDER NOW</span>
+            </button>
 
         </div>
 
-    <script>
-        var panel = document.getElementById("adjdiv");
-        var panel2 = document.getElementById("adjdiv2");
-        var panel3 = document.getElementById("adjdiv3");
-        function desc(){
-            panel2.style.display="none";
-            panel3.style.display="none";
-            panel.style.display="block";
-        }
-        function delivery(){
-            panel.style.display="none";
-            panel3.style.display="none";
-            panel2.style.display="block";
-            
-            
-        }
-        function review(){
-            panel.style.display="none";
-            panel2.style.display="none";
-            panel3.style.display="block";
+        <script>
+            var panel = document.getElementById("adjdiv");
+            var panel2 = document.getElementById("adjdiv2");
+            var panel3 = document.getElementById("adjdiv3");
+            function desc() {
+                panel2.style.display = "none";
+                panel3.style.display = "none";
+                panel.style.display = "block";
+            }
+            function delivery() {
+                panel.style.display = "none";
+                panel3.style.display = "none";
+                panel2.style.display = "block";
 
-        }
-    </script>
+
+            }
+            function review() {
+                panel.style.display = "none";
+                panel2.style.display = "none";
+                panel3.style.display = "block";
+
+            }
+        </script>
 
     </body>
 
@@ -104,7 +105,7 @@ while ($row = $result->fetch_assoc()) {
 
 
 
-<?php
+    <?php
 }
 ;
 $conn->close();
