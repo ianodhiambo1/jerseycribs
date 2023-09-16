@@ -31,24 +31,52 @@ while ($row = $result->fetch_assoc()) {
             <div class="title">Name</div>
             <div class="tshirt_img"><img src="images/psg-player.png" alt="Image"></div>
 
-            <div class="divbtn">
-                <ul class="div_BTN">
-                    <li><button onclick=""></button>Description</li>
-                    <li><button onclick=""></button>Delivery Info</li>
-                    <li><button onclick=""></button>Reviews</li>
+            
+                <ul class="divBTN">
+                    <li><button onclick="desc()">Description</button></li>
+                    <li><button onclick="delivery()">Delivery Info</button></li>
+                    <li><button onclick="review()">Reviews</button></li>
                 </ul>
+            
+            <div class="adjdiv" id="adjdiv">
+                <p>Description</p>
             </div>
-            <div class="adjdiv">
-
+            <div class="adjdiv" id="adjdiv2">
+                <p>Delivery info</p>
             </div>
-            <div class="orderBtn">
-                <i class="fa fa-whatsapp"></i>
-                <h4>ORDER NOW</h4>
+            <div class="adjdiv" id="adjdiv3">
+                <p>Review</p>
+            </div>
+            <div class="orderBtn" >
+                <img src="images/wa.svg" alt="WA" style="border: 1px solid black;" >
+                <h4 class="orderText">ORDER NOW</h4>
             </div>
 
         </div>
 
+    <script>
+        var panel = document.getElementById("adjdiv");
+        var panel2 = document.getElementById("adjdiv2");
+        var panel3 = document.getElementById("adjdiv3");
+        function desc(){
+            panel2.style.display="none";
+            panel3.style.display="none";
+            panel.style.display="block";
+        }
+        function delivery(){
+            panel.style.display="none";
+            panel3.style.display="none";
+            panel2.style.display="block";
+            
+            
+        }
+        function review(){
+            panel.style.display="none";
+            panel2.style.display="none";
+            panel3.style.display="block";
 
+        }
+    </script>
 
     </body>
 

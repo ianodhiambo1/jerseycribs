@@ -9,13 +9,40 @@
     .title{
         text-transform: uppercase;
     }
+    
     .divbtn{
-        width: 100%;
-    }
-    .div_BTN{
+
+        width:  80%;
         display: flex;
+        justify-content: space-between ;
+        border: 1px solid black;        
+    }
+    #adjdiv2{
+        display:none;
+    }
+    #adjdiv3{
+        display:none;
+    }
+    .orderBtn{
         border: 1px solid black;
-        width: auto;
+        display: inline-flex;
+        padding: 7px 94px 6px 67px;
+        align-items: flex-end;
+        gap: 10px;
+        height: fit-content;
+        
+    }
+
+    .orderText{
+        border: 1px solid black;
+        padding-block-start: 10px;
+        color: #000000;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
 }
 /* Medium devices such as tablets (768px and up) */
