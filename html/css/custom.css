@@ -1,42 +1,73 @@
-/* Small devices such as large phones (640px and up) */
-@media only screen and (min-width: 200px) {
-    
-    .wrap{
-            margin-inline: 16px ;
-            
-    
-        }
-    .title{
-        text-transform: uppercase;
-        font-size: 20;
-        font-weight:600;
-    }
-    
-    .divbtn{
 
-        width:  80%;
-        display: flex;
-        justify-content: space-between ;      
+@media all and (min-width: 768px) and (max-width: 1280px) {
+    *{
+        border: 1px solid black;
     }
-    #adjdiv2{
-        display:none;
-    }
-    #adjdiv3{
-        display:none;
-    }
+  .wrap {
+    margin-inline: 16px;
+    display: flex;
+  }
+  .title {
+    text-transform: uppercase;
+    font-size: 20;
+    font-weight: 600;
+  }
 
-}
-/* Medium devices such as tablets (768px and up) */
-@media only screen and (min-width: 768) {
-
+  .divbtn {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #adjdiv2 {
+    display: none;
+  }
+  #adjdiv3 {
+    display: none;
+  }
 }
 
-/* Large devices such as laptops (1024px and up) */
-@media only screen and (min-width: 1024) {
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .wrap {
+    margin-inline: 16px;
+  }
+  .title {
+    text-transform: uppercase;
+    font-size: 20;
+    font-weight: 600;
+  }
 
+  .divbtn {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #adjdiv2 {
+    display: none;
+  }
+  #adjdiv3 {
+    display: none;
+  }
 }
 
-/* Largest devices such as desktops (1280px and up) */
-@media only screen and (min-width: 80em) {
+@media all and (max-width: 480px) {
+  .wrap {
+    margin-inline: 16px;
+  }
+  .title {
+    text-transform: uppercase;
+    font-size: 20;
+    font-weight: 600;
+  }
 
+  .divbtn {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #adjdiv2 {
+    display: none;
+  }
+  #adjdiv3 {
+    display: none;
+  }
 }
