@@ -9,8 +9,7 @@ $PHONE_NUMBER = "+254112465832";
 $sql = "SELECT * FROM jerseys WHERE id='" . $jId . "'";
 $result = $conn->query($sql);
 while ($row = $result->fetch_assoc()) {
-    echo $row['id'];
-    echo $row['name'];
+
 
 
     ?>
@@ -22,14 +21,14 @@ while ($row = $result->fetch_assoc()) {
         <!-- meta include -->
         <?php include('inc/meta.php') ?>
 
-        <title>Document</title>
+        <title><?php echo $row['name']." Jersey "?></title>
     </head>
 
     <body>
         <?php include 'inc/header.php' ?>
         <div class="wrap">
-            <div class="title">Name</div>
-            <div class="tshirt_img"><img src="images/psg-player.png" alt="Image"></div>
+            <div class="title"><?php echo $row['name']." Jersey "?></div>
+            <div class="tshirt_img"  ><img src="images/<?php echo $row['image_url']?>" alt="<?php echo $row['name']." Jersey "?>"></div>
 
 
             <ul class="divBTN">
@@ -47,11 +46,13 @@ while ($row = $result->fetch_assoc()) {
             <div class="adjdiv" id="adjdiv3">
                 <p>Review</p>
             </div>
-            <button class="btn mr-2 mb-2 btn-icon btn-primary" type="button" 
-            style=" width:100%;" >
-                <span class="btn-inner-icon"><i class="fa fa-whatsapp"></i></span>
-                <span class="btn-inner-text">ORDER NOW</span>
-            </button>
+            <a href=" ">
+                <button class="btn mr-2 mb-2 btn-icon btn-primary" type="button" 
+                style=" width:100%;" >
+                    <span class="btn-inner-icon"><i class="fa fa-whatsapp"></i></span>
+                    <span class="btn-inner-text">ORDER NOW</span>
+                </button>
+        </a>
 
         </div>
 
